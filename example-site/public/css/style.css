@@ -1,0 +1,37 @@
+#people {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#people td, #people th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#people tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#people th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.rightAlign {
+    text-align: right;
+}
+
+img.imgButton {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+img.imgButton:hover {
+    background-color: #4CAF50;
+}

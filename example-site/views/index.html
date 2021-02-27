@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another website</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <div id="excelRoprt">
+        <table id="people">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td rowspan="3">20</td>
+            </tr>
+            <tr>
+                <td>Sara</td>
+            </tr>
+            <tr>
+                <td>Peter</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td rowspan="2">24</td>
+            </tr>
+            <tr>
+                <td>Joe</td>
+            </tr>
+            <tr>
+                <td>Molly</td>
+                <td rowspan="2">25</td>
+            </tr>
+            <tr>
+                <td>Jana</td>
+            </tr>
+        </table>
+    </div>
+    <div class="rightAlign">
+        <img class="imgButton" title="Download as Excel" onclick="getExcelFileName()" src="/img/excel.png" alt="">
+    </div>
+
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/js/scripts.js"></script>
+
+</body>
+
+</html>
