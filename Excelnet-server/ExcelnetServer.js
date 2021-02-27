@@ -20,6 +20,11 @@ app.use(bodyParser.json()); // parse application/json
 app.use(express.static('./downloads'));
 app.use(express.static('./public'));
 
+// creating files storage
+if (!fs.existsSync('./downloads')) {
+    fs.mkdirSync('./downloads');
+}
+
 app.get('/', function (req, res) {
     res.sendFile(`${__dirname}/views/index.html`)
 });
